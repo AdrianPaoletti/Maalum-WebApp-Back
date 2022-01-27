@@ -1,3 +1,5 @@
-export class ErrorCode extends Error {
+class ErrorCode extends Error {
   code: number | undefined;
 }
+
+export default ErrorCode;

@@ -1,6 +1,6 @@
 import express from "express";
 import Reservation from "../../database/models/reservation";
-import { ErrorCode } from "../../interfaces/error/error";
+import ErrorCode from "../../interfaces/error/error";
 
 const getAllReservation = async (
   req: express.Request,

@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-export interface reservationI {
+export interface ReservationI {
   name: string;
   email: string;
   phone: number;
@@ -11,7 +11,7 @@ export interface reservationI {
   idGenerated: string;
 }
 
-const reservationSchema: Schema<reservationI> = new Schema({
+const reservationSchema: Schema<ReservationI> = new Schema({
   name: {
     type: String,
     required: true,
