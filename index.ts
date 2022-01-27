@@ -8,11 +8,9 @@ import connectDB from "./database/index";
 const port: string | number =
   process.env.PORT ?? process.env.SERVER_PORT ?? 6001;
 
-const urlMongo = process.env.MONGODB_STRING;
-
 (async () => {
   try {
-    await connectDB(`${urlMongo}`);
+    await connectDB(process.env.MONGODB_STRING);
     initilizeServer(+port);
   } catch (error) {
     process.exit(1);

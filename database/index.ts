@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 const debug = Debug("znzApp:database");
 
-const connectDB = (connectionString: string) =>
+const connectDB = (connectionString: any) =>
   new Promise<void>((resolve, reject) => {
     mongoose.set("debug", true);
     mongoose.set("toJSON", {

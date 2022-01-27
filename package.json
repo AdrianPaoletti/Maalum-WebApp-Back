@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll --collect-coverage",
-    "tsc": "tsc --watch",
+    "build": "tsc",
     "start": "node dist/index.js"
   },
   "repository": {
