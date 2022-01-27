@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --watchAll --collect-coverage",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js -q"
   },
   "repository": {
     "type": "git",
@@ -32,14 +33,15 @@
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "cors": "^2.8.5",
     "chalk": "^4.1.2",
+    "cors": "^2.8.5",
     "debug": "^4.3.3",
     "dotenv": "^11.0.0",
     "express": "^4.17.2",
     "express-validation": "^3.0.8",
     "jest": "^27.4.7",
     "mongoose": "^6.1.6",
+    "nodemon": "^2.0.15",
     "ts-jest": "^27.1.2"
   }
 }
