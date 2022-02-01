@@ -30,7 +30,9 @@ const getUniqueReservation = async (
 ) => {
   try {
     const { idReservation } = req.params;
-    const searchedReservation = await Reservation.findById(idReservation);
+    const searchedReservation = await Reservation.findOne({
+      idGenerated: idReservation,
+    });
     if (searchedReservation) {
       res.json(searchedReservation);
       return;
