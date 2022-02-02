@@ -76,9 +76,9 @@ const deleteReservation = async (
 ) => {
   try {
     const { idReservation } = req.params;
-    const reservationDeleted = await Reservation.findByIdAndRemove(
-      idReservation
-    );
+    const reservationDeleted = await Reservation.findOneAndDelete({
+      idGenerated: idReservation,
+    });
     if (reservationDeleted) {
       res.json("Deleted successfully");
       return;
