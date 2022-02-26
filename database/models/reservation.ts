@@ -2,6 +2,7 @@ import { Schema, model } from "mongoose";
 
 export interface ReservationI {
   name: string;
+  surname: string;
   email: string;
   phone: number;
   adults: number;
@@ -15,6 +16,10 @@ const reservationSchema: Schema<ReservationI> = new Schema({
   name: {
     type: String,
     required: true,
+  },
+  surname: {
+    type: String,
+    required: false,
   },
   email: {
     type: String,
