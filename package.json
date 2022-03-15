@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/AdrianPaoletti/Maalum-WebApp-Back#readme",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.12",
     "@types/debug": "^4.1.7",
+    "@types/jsonwebtoken": "^8.5.8",
     "@types/morgan": "^1.9.3",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
@@ -42,9 +44,10 @@
     "express": "^4.17.2",
     "express-validation": "^3.0.8",
     "jest": "^27.4.7",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.6",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.15",
-    "ts-jest": "^27.1.2",
-    "morgan": "^1.10.0"
+    "ts-jest": "^27.1.2"
   }
 }

@@ -4,6 +4,7 @@ import cors from "cors";
 import chalk from "chalk";
 import Debug from "debug";
 import reservationRoutes from "./routes/reservationRoutes";
+import userRoutes from "./routes/userRoutes";
 
 const debug = Debug("znzApp:server");
 
@@ -35,5 +36,6 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 app.use("/reservations", reservationRoutes);
+app.use("/users", userRoutes);
 
 export { initilizeServer, app };
